@@ -1,0 +1,15 @@
+Group hierarchy;Region;Description;Service;Upfront;Monthly;First 12 months total;Currency;Configuration summary
+My Estimate;US East (N. Virginia);;S3 Standard;0;9103.2;109238.40;USD;S3 Standard storage (400000 GB per month)
+My Estimate;US East (N. Virginia);;Data Transfer;0;92.07;1104.84;USD;DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month)
+My Estimate;US East (N. Virginia);;Amazon EC2;0;4211.76;50541.12;USD;Operating system (Linux), Quantity (14), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (a1.metal)
+My Estimate;US East (N. Virginia);;Amazon EC2;0;3610.08;43320.96;USD;Operating system (Linux), Quantity (12), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (a1.metal)
+My Estimate;US East (N. Virginia);;Amazon RDS for MySQL;0;1126.4;13516.80;USD;Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (200 GB), Quantity (1), Instance type (db.m3.2xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand)
+My Estimate;US East (N. Virginia);;Application Load Balancer;0;425.23;5102.76;USD;Number of Application Load Balancers (1)
+My Estimate;US East (N. Virginia);;Application Load Balancer;0;191.63;2299.56;USD;Number of Application Load Balancers (1)
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+Acknowledgement;;;;;;;;
+* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.;;;;;;;;
+Rationale: Web Ec2  Increase from 8 to 12 instances & App EC2 Increase from 8 to 14 instances, WEB LB 1920 connections/s, APP LB 768 connections/s, S3 9GB per user, DB  db.m3.2xlarge instance;;;;;;;;
+I decided to increase the storage per user to 9GB per month, the DB to 200GB and the rest is about higher specs for performance boost.;;;;;;;;

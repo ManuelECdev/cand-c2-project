@@ -1,0 +1,14 @@
+Group hierarchy;Region;Description;Service;Upfront;Monthly;First 12 months total;Currency;Configuration summary
+My Estimate;US East (N. Virginia);;S3 Standard;0;701;8412.00;USD;S3 Standard storage (25000 GB per month)
+My Estimate;US East (N. Virginia);;Data Transfer;0;92.07;1104.84;USD;DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month)
+My Estimate;US East (N. Virginia);;Amazon EC2;0;2406.72;28880.64;USD;Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (a1.metal)
+My Estimate;US East (N. Virginia);;Amazon EC2;0;2406.72;28880.64;USD;Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (a1.metal)
+My Estimate;US East (N. Virginia);;Amazon RDS for MySQL;0;293.1;3517.20;USD;Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (1), Instance type (db.m3.large), Deployment option (Multi-AZ), Pricing strategy (OnDemand)
+My Estimate;US East (N. Virginia);;Application Load Balancer;0;308.43;3701.16;USD;Number of Application Load Balancers (1)
+My Estimate;US East (N. Virginia);;Application Load Balancer;0;133.23;1598.76;USD;Number of Application Load Balancers (1)
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+Acknowledgement;;;;;;;;
+* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.;;;;;;;;
+rationale:  WEB LB Reduced from 1920 to 1280 connections/s & From 70 GB to 50GB per hour, App LB Reduced from 768 to 640 connections/s  & From 30GB to 20GB per hour, Web Ec2  Reduced from 10 to 8 instances, App EC2 Reduced from 12 to 8 instances, S3 Reduced resources 1/2. From 1GB per user to 0.5 GB per user., RDS Reduced DB to instance from db.m3.2xlarge to db.m3.large.;;;;;;;;
